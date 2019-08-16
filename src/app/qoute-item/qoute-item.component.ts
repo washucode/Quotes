@@ -9,10 +9,11 @@ import { Quotes } from '../quotes';
 export class QouteItemComponent implements OnInit {
 
   quotes: Quotes[] = [
-    {id:1, author:'Esther',name:'WAchuka',details:'Do something soon'},
+    new Quotes(1, 'Esther','WAchuka','Do something soon'),
 
   ];
 
+  
   constructor() { }
 
   ngOnInit() {
