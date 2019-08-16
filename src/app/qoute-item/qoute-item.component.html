@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>QUOTES</h1>
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes;let i = index'>
+        {{quote.name}}
+          <app-quote-detail  [quote]='quote'></app-quote-detail>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
