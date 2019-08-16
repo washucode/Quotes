@@ -9,7 +9,7 @@ import { Quotes } from '../quotes';
 export class QouteItemComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes(1, 'Esther','WAchuka','Do something soon'),
+    new Quotes(1, 'Audre Lorde','WAchuka','When I dare to be powerful – to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.'),
 
   ];
   removeQuote(deleteQuote,index){
