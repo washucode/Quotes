@@ -8,6 +8,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QoutesFormComponent } from './qoutes-form/qoutes-form.component';
 import { QouteItemComponent } from './qoute-item/qoute-item.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { QouteItemComponent } from './qoute-item/qoute-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
