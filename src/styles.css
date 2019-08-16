@@ -4,3 +4,10 @@
 
   border-color: transparent;
 }
+p{
+  font-size: 14px;
+}
+.author{
+  font-weight: bolder;
+  text-align: right;
+}
