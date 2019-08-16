@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
 .card{
 
   border-color: transparent;
@@ -13,4 +14,7 @@ p{
 }
 h1{
   text-align: center;
+}
+hr{
+  width:70%;
 }
