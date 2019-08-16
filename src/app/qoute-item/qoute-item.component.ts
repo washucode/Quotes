@@ -18,6 +18,16 @@ export class QouteItemComponent implements OnInit {
     }
   }
 
+  public countUpvote:number = 0;
+  public countDownvote:number = 0;
+
+  upvoteCounter(){
+    this.countUpvote += 1;
+  }
+  downvoteCounter(){
+    this.countDownvote += 1;
+  }
+
   constructor() { }
 
   ngOnInit() {
