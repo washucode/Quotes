@@ -6,10 +6,10 @@
     <div class="col-md-6">
       <div *ngFor='let quote of quotes;let i = index'>
 
-          <app-quote-detail   [quote]='quote'></app-quote-detail>
+          <app-quote-detail (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail>
           <p>Author: {{quote.author}} </p>
           <span> Uploaded by:{{quote.name}} </span>
-          
+
 
       </div>
     </div>

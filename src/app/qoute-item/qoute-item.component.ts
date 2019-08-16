@@ -12,8 +12,12 @@ export class QouteItemComponent implements OnInit {
     new Quotes(1, 'Esther','WAchuka','Do something soon'),
 
   ];
+  removeQuote(deleteQuote,index){
+    if(deleteQuote){
+      this.quotes.splice(index,1);
+    }
+  }
 
-  
   constructor() { }
 
   ngOnInit() {
