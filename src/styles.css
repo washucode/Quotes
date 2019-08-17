@@ -6,11 +6,12 @@
   border-color: transparent;
 }
 p{
-  font-size: 14px;
+  font-size: 12px;
 }
 .author{
   font-weight: bolder;
-  text-align: right;
+    font-size: 12px;
+
 }
 h1{
   text-align: center;
@@ -22,7 +23,7 @@ hr{
 font-size:25px;
 }
 #downvote{
-  padding-left: 10%;
+  padding-left: 2%;
 }
 
 .popular h5,h4{
@@ -45,4 +46,8 @@ font-size:20px;
 }
 .popular #upvote{
 font-size:20px;
+}
+
+.details{
+  float:right;
 }
