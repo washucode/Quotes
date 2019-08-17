@@ -17,6 +17,9 @@ export class QouteItemComponent implements OnInit {
       this.quotes.splice(index,1);
     }
   }
+    toggleNameDate(index){
+      this.quotes[index].showDateName=!this.quotes[index].showDateName;
+    }
 
 
   upvoteCounter(index){
