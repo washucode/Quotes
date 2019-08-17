@@ -1,8 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 body{
   font-family: 'Nunito', sans-serif;
+}
+.jumbotron{
+  padding-top: 2%;
+
+}
+
+.container{
+  margin-top: -6%;
+}
+
+
+.jumbotron p{
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
 }
 .card{
 
@@ -17,10 +33,11 @@ p{
 
 }
 h1{
+  font-family: 'Pacifico', cursive;
   text-align: center;
 }
 hr{
-  width:70%;
+  width:60%;
 }
 #downvote,#upvote{
 font-size:25px;
@@ -37,6 +54,7 @@ font-size:25px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+
 }
 
 .popular .author{
