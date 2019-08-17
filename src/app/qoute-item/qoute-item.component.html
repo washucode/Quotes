@@ -10,14 +10,18 @@
     <div  *ngFor="let quote of quotes; let first = first"
     [ngClass]="{ first: first}" class = "card popular">
         <h4>Most Popular Quote:</h4>
-        <h5 >{{quote.details}}</h5>
+        <div class="col-md-12">
+          <h6>{{quote.details}} <span class ="author">~{{quote.author}} </span></h6>
+
+        </div>
         <div class="col-md-4">
           <i class="fa fa-thumbs-up" id = "upvote"  (click)="upvoteCounter(i)">{{quote.upVote}} </i>
           <i class="fa fa-thumbs-down" id = "downvote" (click) = "downvoteCounter(i)" >{{quote.downVote}}</i>
+
        </div>
-        <p class ="author">~{{quote.author}} </p>
-        <p> Uploaded by:{{quote.name}} </p>
-       <app-quote-detail (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail>
+
+        <!-- <--<p> Uploaded by:{{quote.name}} </p>
+       <app-quote-detail (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail> -->
 
 
     </div>
@@ -27,6 +31,9 @@
 
 </div>
 
+<!----------
+Display normal quotes
+----- -->
 
  <hr>
  <hr>
@@ -34,21 +41,20 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <div *ngFor='let quote of quotes;let i = index' class = "card">
+          <div class="col-md-12">
+            <h6>{{quote.details}} <span class ="author">~{{quote.author}} </span></h6>
+          </div>
 
-          <h5>{{quote.details}}</h5>
-          <div class="col-md-4">
+          <div class="col-md-12">
             <i class="fa fa-thumbs-up" id = "upvote"  (click)="upvoteCounter(i)">{{quote.upVote}} </i>
             <i class="fa fa-thumbs-down" id = "downvote" (click) = "downvoteCounter(i)" >{{quote.downVote}}</i>
-         </div>
-          <p class ="author">~{{quote.author}} </p>
-          <p> Uploaded by:{{quote.name}} </p>
-          <app-quote-detail (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail>
+            <button (click)='toggleNameDate(i)' class ="details">Details</button>
+          </div>
 
-
+          <app-quote-detail  *ngIf='quote.showDateName'(deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail>
       </div>
     </div>
-
-      <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
 
   </div>
   <hr>
