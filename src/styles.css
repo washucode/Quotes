@@ -4,15 +4,25 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 body{
   font-family: 'Nunito', sans-serif;
+  background-image: url("src/bg2.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 .jumbotron{
   padding-top: 2%;
+  background-color:#833471;
+
 
 }
 
 .container{
   margin-top: -6%;
+  background-color:white;
+  opacity: 0.9;
+  border-radius:2%;
+
 }
+
 
 
 .jumbotron p{
@@ -37,7 +47,7 @@ h1{
   text-align: center;
 }
 hr{
-  width:60%;
+  width:100%;
 }
 #downvote,#upvote{
 font-size:25px;
@@ -54,6 +64,7 @@ font-size:25px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+  padding-top: 3%;
 
 }
 
@@ -67,6 +78,6 @@ font-size:15px;
 font-size:15px;
 }
 
-.details{
+.details,.delete{
   float:right;
 }

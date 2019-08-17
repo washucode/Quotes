@@ -7,6 +7,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QoutesFormComponent } from './qoutes-form/qoutes-form.component';
 import { QouteItemComponent } from './qoute-item/qoute-item.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { QouteItemComponent } from './qoute-item/qoute-item.component';
     QuotesComponent,
     QuoteDetailComponent,
     QoutesFormComponent,
-    QouteItemComponent
+    QouteItemComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
