@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body{
+  font-family: 'Nunito', sans-serif;
+}
 .card{
 
   border-color: transparent;
@@ -26,26 +29,24 @@ font-size:25px;
   padding-left: 2%;
 }
 
-.popular h5,h4{
-  font-size: 14px;
-
+.popular h6,h4{
+  font-size: 12px;
 }
+
 .popular h4{
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-
 }
 
-
-.popular p{
-  font-size: 12px;
+.popular .author{
+  font-size: 10px;
 }
 .popular #downvote{
-font-size:20px;
+font-size:15px;
 }
 .popular #upvote{
-font-size:20px;
+font-size:15px;
 }
 
 .details{
