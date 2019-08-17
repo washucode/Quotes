@@ -7,9 +7,9 @@
       <div *ngFor='let quote of quotes;let i = index' class = "card">
 
           <h5>{{quote.details}}</h5>
-          <i class="fa fa-thumbs-up" id = "upvote"  (click)="upvoteCounter()"> {{countUpvote}}</i>
+          <i class="fa fa-thumbs-up" id = "upvote"  (click)="upvoteCounter(i)"> {{quote.upVote}}</i>
 
-          <i class="fa fa-thumbs-down" id = "downvote" (click) = "downvoteCounter()" > {{countDownvote}}</i>
+          <i class="fa fa-thumbs-down" id = "downvote" (click) = "downvoteCounter(i)" > {{quote.downVote}}</i>
 
           <p class ="author">~{{quote.author}} </p>
           <p> Uploaded by:{{quote.name}} </p>
