@@ -19,5 +19,30 @@ hr{
   width:70%;
 }
 #downvote,#upvote{
-font-size:30px;
+font-size:25px;
+}
+#downvote{
+  padding-left: 10%;
+}
+
+.popular h5,h4{
+  font-size: 14px;
+
+}
+.popular h4{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
+.popular p{
+  font-size: 12px;
+}
+.popular #downvote{
+font-size:20px;
+}
+.popular #upvote{
+font-size:20px;
 }
