@@ -1,11 +1,11 @@
 <div class="container-fluid">
-  <h3 class="text-center" id ="uploadheader">Upload a new Quote</h3>
+  <h5 class="text-center" id ="uploadheader">Upload a new Quote(optional)</h5>
   <hr>
   <form  (ngSubmit)='uploadQuote()'#quoteForm='ngForm'>
       <div class="form-group">
 
-          <label for="name">Name</label>
-          <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'>
+
+          <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' placeholder="Name">
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
             <p>Name is required</p>
           </div>
@@ -13,23 +13,21 @@
       </div>
       <div class="form-group">
 
-          <label for="name">Author</label>
-          <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author = 'ngModel'required>
+
+          <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author = 'ngModel' placeholder ="Author" required>
           <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
             <p>Author is required</p>
           </div>
 
       </div>
       <div class="form-group">
-
-          <label for="quotedetail">Quote</label>
-          <textarea class="form-control" id="details" rows="2" [(ngModel)]="newQuote.details" name="details"  #details= 'ngModel'required></textarea>
+          <textarea class="form-control" id="details" rows="1" [(ngModel)]="newQuote.details" name="details"  #details= 'ngModel' placeholder ="Type Quote" required></textarea>
           <div [hidden]="details.valid || details.pristine" class="alert alert-danger">
             <p>Quote is required</p>
           </div>
       </div>
       <div class="form-group">
-          <label for="complete"> Date of Upload</label>
+          <label for="complete"> Date of Upload </label>
           <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate"  #completeDate= 'ngModel'required>
           <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
             <p>Quote is required</p>

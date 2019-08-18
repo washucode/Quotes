@@ -54,9 +54,10 @@ export class QouteItemComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
-  toggleForm(){
-    this.quotes.showForm=!this.quotes.showForm;
-  }
+
+
+  
+
 
   constructor() {
    }
