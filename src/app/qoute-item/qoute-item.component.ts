@@ -22,9 +22,9 @@ export class QouteItemComponent implements OnInit {
 //   return b - a;
 // });
 
-  firstQuote() {
-  return this.quotes[0];
-   }
+  // firstQuote() {
+  // return this.quotes[0];
+  //  }
 
 
   removeQuote(deleteQuote,index){
@@ -46,6 +46,16 @@ export class QouteItemComponent implements OnInit {
   }
   downvoteCounter(index){
       this.quotes[index].downVote ++;
+  }
+
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+  toggleForm(){
+    this.quotes.showForm=!this.quotes.showForm;
   }
 
   constructor() {

@@ -9,7 +9,7 @@
       <div class="col-md-8">
          <div  class = "card popular" appHighlight >
             <h4>Most Popular Quote:</h4>
-            <div *ngIf="firstQuote()"class="col-md-12">
+            <div class="col-md-12">
               <h6 >{{quotes[0].details}} <span class ="author">~{{quotes[0].author}} </span></h6>
 
             </div>
@@ -19,8 +19,9 @@
 
            </div>
 
-            <!-- <--<p> Uploaded by:{{quote.name}} </p>
-           <app-quote-detail (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail> -->
+
+           <!--
+           -detail (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail> --> -->
 
 
         </div>
@@ -34,7 +35,10 @@
       <div class="col-md-3"></div>
 
       <div class="col-md-6">
-        <app-quote-form></app-quote-form>
+      <a  (click)='toggleForm()'class = "btn btn-sm btn-outline-dark upload">Upload a Quote</a>
+ <!--*ngIf='quote.showForm'-->
+
+        <app-quote-form *ngIf='quotes.showForm' (addQuote)="addNewQuote($event)"></app-quote-form>
       </div>
       <div class="col-md-3"></div>
 
@@ -61,7 +65,7 @@ Display normal quotes
           </div>
 
 
-            <app-quote-detail  *ngIf='quote.showDateName'(deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail>
+            <app-quote-detail  *ngIf='quote.showDateName' (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail>
 
 
 

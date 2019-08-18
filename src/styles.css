@@ -88,6 +88,13 @@ font-size:15px;
 #upload{
   margin-bottom: 5%;
 }
+.upload{
+  margin-top: 5%;
+  text-align: center;
+  float: right;
+  margin-right: 40%;
+  margin-bottom: 5%;
+}
 #uploadheader{
   margin-top: 5%;
 }
