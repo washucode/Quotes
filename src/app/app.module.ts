@@ -11,6 +11,7 @@ import { HighlightDirective } from './highlight.directive';
 import { SortPipe } from './sort.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
+import { TimeAgoPipe } from './time-ago.pipe';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     QouteItemComponent,
     HighlightDirective,
     SortPipe,
-    QuoteFormComponent
+    QuoteFormComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
