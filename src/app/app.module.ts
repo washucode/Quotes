@@ -8,6 +8,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QoutesFormComponent } from './qoutes-form/qoutes-form.component';
 import { QouteItemComponent } from './qoute-item/qoute-item.component';
 import { HighlightDirective } from './highlight.directive';
+import { SortPipe } from './sort.pipe';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HighlightDirective } from './highlight.directive';
     QuoteDetailComponent,
     QoutesFormComponent,
     QouteItemComponent,
-    HighlightDirective
+    HighlightDirective,
+    SortPipe
   ],
   imports: [
     BrowserModule,

@@ -14,17 +14,31 @@ export class QouteItemComponent implements OnInit {
     new Quotes(0,0,2, 'Andre Gide, Autumn Leaves','Wachuka','It is better to be hated for what you are than to be loved for what you are not.'),
 
   ];
+
+//   let a =this.quotes[index].upVote;
+//   let b =this.quotes[index].downVote;
+//
+//   let sortedQuotes = quotes.sort((a,b) => {
+//   return b - a;
+// });
+
   firstQuote() {
   return this.quotes[0];
-}
+   }
+
+
   removeQuote(deleteQuote,index){
     if(deleteQuote){
-      this.quotes.splice(index,1);
+      let forDelete = confirm(`Are you sure you want to delete this quote by ${this.quotes[index].author}?`)
+      if (forDelete){
+        this.quotes.splice(index,1);
+        }
+
+      }
     }
+  toggleNameDate(index){
+    this.quotes[index].showDateName=!this.quotes[index].showDateName;
   }
-    toggleNameDate(index){
-      this.quotes[index].showDateName=!this.quotes[index].showDateName;
-    }
 
 
   upvoteCounter(index){

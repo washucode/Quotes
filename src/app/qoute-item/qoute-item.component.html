@@ -38,7 +38,7 @@ Display normal quotes
   <div class="row " >
     <div class="col-md-2"></div>
     <div class="col-md-8 ">
-      <div *ngFor='let quote of quotes;let i = index' class = "card" >
+      <div *ngFor='let quote of quotes|sort:"upVote":"desc";let i = index ' class = "card" >
           <div class="col-md-12">
             <h6>{{quote.details}} <span class ="author">~{{quote.author}} </span></h6>
           </div>

@@ -10,7 +10,8 @@ body{
 }
 .jumbotron{
   padding-top: 2%;
-  background-color:#833471;
+  background-color:rgba(30, 39, 46,1.0);
+  color:white;
 
 
 }
@@ -54,6 +55,9 @@ font-size:25px;
 }
 #downvote{
   padding-left: 2%;
+}
+#downvote:hover,#upvote:hover{
+  color:rgba(109, 33, 79,1.0)
 }
 
 .popular h6,h4{
