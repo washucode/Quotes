@@ -9,6 +9,8 @@ import { QoutesFormComponent } from './qoutes-form/qoutes-form.component';
 import { QouteItemComponent } from './qoute-item/qoute-item.component';
 import { HighlightDirective } from './highlight.directive';
 import { SortPipe } from './sort.pipe';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,11 +21,13 @@ import { SortPipe } from './sort.pipe';
     QoutesFormComponent,
     QouteItemComponent,
     HighlightDirective,
-    SortPipe
+    SortPipe,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+     FormsModule,
 
   ],
   providers: [],

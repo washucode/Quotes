@@ -85,3 +85,9 @@ font-size:15px;
 .details,.delete{
   float:right;
 }
+#upload{
+  margin-bottom: 5%;
+}
+#uploadheader{
+  margin-top: 5%;
+}

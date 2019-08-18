@@ -4,31 +4,42 @@
   to display higlighed quote
 -------------------- -->
 
-<div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-     <div  class = "card popular" appHighlight >
-        <h4>Most Popular Quote:</h4>
-        <div *ngIf="firstQuote()"class="col-md-12">
-          <h6 >{{quotes[0].details}} <span class ="author">~{{quotes[0].author}} </span></h6>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+         <div  class = "card popular" appHighlight >
+            <h4>Most Popular Quote:</h4>
+            <div *ngIf="firstQuote()"class="col-md-12">
+              <h6 >{{quotes[0].details}} <span class ="author">~{{quotes[0].author}} </span></h6>
+
+            </div>
+            <div class="col-md-4">
+              <i class="fa fa-thumbs-up" id = "upvote" >{{quotes[0].upVote}} </i>
+              <i class="fa fa-thumbs-down" id = "downvote"  >{{quotes[0].downVote}}</i>
+
+           </div>
+
+            <!-- <--<p> Uploaded by:{{quote.name}} </p>
+           <app-quote-detail (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail> -->
+
 
         </div>
-        <div class="col-md-4">
-          <i class="fa fa-thumbs-up" id = "upvote"  (click)="upvoteCounter(i)">{{quotes[0].upVote}} </i>
-          <i class="fa fa-thumbs-down" id = "downvote" (click) = "downvoteCounter(i)" >{{quotes[0].downVote}}</i>
+      </div>
 
-       </div>
+        <div class="col-md-2"></div>
 
-        <!-- <--<p> Uploaded by:{{quote.name}} </p>
-       <app-quote-detail (deleteQuote) = 'removeQuote($event,i)'  [quote]='quote'></app-quote-detail> -->
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+
+      <div class="col-md-6">
+        <app-quote-form></app-quote-form>
+      </div>
+      <div class="col-md-3"></div>
 
 
     </div>
-  </div>
-
-    <div class="col-md-2"></div>
-
-</div>
 
 <!----------
 Display normal quotes

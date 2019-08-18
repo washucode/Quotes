@@ -9,9 +9,9 @@ import { Quotes } from '../quotes';
 export class QouteItemComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes(0,0,1, 'Audre Lorde','Wachuka','When I dare to be powerful – to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.'),
-    new Quotes(0,0,2, 'Oscar Wilde','Wachuka','To live is the rarest thing in the world. Most people exist, that is all'),
-    new Quotes(0,0,2, 'Andre Gide, Autumn Leaves','Wachuka','It is better to be hated for what you are than to be loved for what you are not.'),
+    new Quotes(0,0,1, 'Audre Lorde','Wachuka','When I dare to be powerful – to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.',new Date(2019,1,12)),
+    new Quotes(0,0,2, 'Oscar Wilde','Wachuka','To live is the rarest thing in the world. Most people exist, that is all',new Date(2019,1,12)),
+    new Quotes(0,0,2, 'Andre Gide, Autumn Leaves','Wachuka','It is better to be hated for what you are than to be loved for what you are not.',new Date(2019,1,12)),
 
   ];
 
