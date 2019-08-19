@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
-import { QoutesFormComponent } from './qoutes-form/qoutes-form.component';
+
 import { QouteItemComponent } from './qoute-item/qoute-item.component';
 import { HighlightDirective } from './highlight.directive';
 import { SortPipe } from './sort.pipe';
@@ -19,7 +19,7 @@ import { TimeAgoPipe } from './time-ago.pipe';
     AppComponent,
     QuotesComponent,
     QuoteDetailComponent,
-    QoutesFormComponent,
+  
     QouteItemComponent,
     HighlightDirective,
     SortPipe,
