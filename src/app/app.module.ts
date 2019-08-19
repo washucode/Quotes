@@ -8,7 +8,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 
 import { QouteItemComponent } from './qoute-item/qoute-item.component';
 import { HighlightDirective } from './highlight.directive';
-import { SortPipe } from './sort.pipe';
+
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { TimeAgoPipe } from './time-ago.pipe';
@@ -19,10 +19,10 @@ import { TimeAgoPipe } from './time-ago.pipe';
     AppComponent,
     QuotesComponent,
     QuoteDetailComponent,
-  
+
     QouteItemComponent,
     HighlightDirective,
-    SortPipe,
+
     QuoteFormComponent,
     TimeAgoPipe
   ],
