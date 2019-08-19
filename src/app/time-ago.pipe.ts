@@ -10,12 +10,12 @@ export class TimeAgoPipe implements PipeTransform {
     let nowTime:any = new Date(now.getTime());
     let valueTime:any = new Date(value.getTime());
     var timeDifference = Math.abs(nowTime - valueTime);
-    const secondInHour = 3600000;
-    var timeDifferenceFinal = timeDifference/secondInHour;
+    const milSecondInHour = 3600000;
+    var timeDifferenceFinal = timeDifference/milSecondInHour;
 
 
      if(timeDifferenceFinal >=168){
-       return   Math.round(timeDifferenceFinal/168)  + "days";
+       return   Math.round(timeDifferenceFinal/168)  + "weeks";
      }
      else if(timeDifferenceFinal >= 48){
        return   Math.round(timeDifferenceFinal/24) + "days";
