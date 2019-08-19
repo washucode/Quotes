@@ -45,7 +45,7 @@ export class QouteItemComponent implements OnInit {
   }
   get orderQuotes() {
     return this.quotes.sort((a, b) => {
-      return <any>new Date(b.upVote) - <any>new Date(a.upVote);
+      return <any>b.upVote - <any>a.upVote;
     });
   }
 
