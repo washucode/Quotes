@@ -39,8 +39,14 @@ export class QouteItemComponent implements OnInit {
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
-    quote.completeDate = new Date(quote.completeDate)
-    this.quotes.push(quote)
+    quote.completeDate = new Date(quote.completeDate);
+    this.quotes.push(quote);
+
+  }
+  get sortQuotes() {
+    return this.quotes.sort((a, b) => {
+      return <any>new Date(b.upVote) - <any>new Date(a.upVote);
+    });
   }
 
 
