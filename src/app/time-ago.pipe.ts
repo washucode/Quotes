@@ -7,7 +7,7 @@ export class TimeAgoPipe implements PipeTransform {
 
   transform(value: any ,args?: any): any {
     if (value) {
-    const timeDifference = Math.floor((new Date() - new Date(value)) / 1000);//convert to seconds
+    const timeDifference = Math.floor((+new Date() - +new Date(value)) / 1000);//convert to seconds
     const fromSeconds = {'year': 31536000, 'month': 2592000,'week': 604800,'day': 86400,'hour': 3600,'minute': 60,'second': 1 };
     if (timeDifference < 29){
         return 'Just now';
