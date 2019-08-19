@@ -15,18 +15,6 @@ export class QouteItemComponent implements OnInit {
 
   ];
 
-//   let a =this.quotes[index].upVote;
-//   let b =this.quotes[index].downVote;
-//
-//   let sortedQuotes = quotes.sort((a,b) => {
-//   return b - a;
-// });
-
-  // firstQuote() {
-  // return this.quotes[0];
-  //  }
-
-
   removeQuote(deleteQuote,index){
     if(deleteQuote){
       let forDelete = confirm(`Are you sure you want to delete this quote by ${this.quotes[index].author}?`)
