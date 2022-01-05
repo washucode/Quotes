@@ -1,5 +1,5 @@
 # Quotes
-A website that allows user to upload,like delete quotes.
+A website that allows user to upload,like and  delete quotes.
 
 ## Author
 ESTHER WACHUKA
